@@ -4,11 +4,20 @@ const checkbutton = document.querySelector("#check-button");
 const cashgiven = document.querySelector("#Cash-given");
 const errormessage = document.querySelector("#error-Message");
 const numberofnotes = document.querySelectorAll(".no-of-note");
+const nextbutton = document.querySelector("#next-button");
+const Nextdivhide = document.querySelector("#hidediv");
+
+
+
 var amount =[2000,500,100,20,10,5,1];
+
+nextbutton.addEventListener('click', function CheckBill(){
+    Nextdivhide.style.display ="block";
+})
 
 checkbutton.addEventListener('click',function ValidCashAmount(){
     console.log(bill_amount.value , cashgiven.value , "hi");
-    hidemessage
+    hidemessage();
     if(bill_amount.value >0){
         errormessage.innerHTML= ""
         if(cashgiven.value >= bill_amount.value){

@@ -95,3 +95,6 @@ button {
     font-weight: bolder;
     font-style: oblique;
   }
+  #hidediv{
+    display: none;
+  }
